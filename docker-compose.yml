@@ -1,0 +1,11 @@
+version: '2'
+services:
+  gpi:
+    image: docker-int.symphonyretailai.com/tools/gpi:31816
+    ports:
+      - 8081:8080
+    volumes:
+      - GPI_DATA_QA:/usr/local/tomee/GPI_DATA
+
+volumes:
+  GPI_DATA_QA:
